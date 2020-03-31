@@ -4,7 +4,7 @@ def my_weater(sit):
     weat = requests.get('http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}'.format(sit,api))
     weat = weat.json()
     temp = ((weat.get('main')).get('temp')) - 273
-    temp = (round(temp,1))
-    return temp
+    temper = (round(temp,1))
+    return temper
 
 
